@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+object {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 2rem;
+}
+
+.details {
+    width: 85%;
+    font-size: 11px;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: "Lexend Deca";
+    margin-bottom: 4rem;
+}
+
+button {
+    font-size: 0.8rem;
+    background-color: #fff;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    width: 70%;
+    border-radius: 25px;
+    justify-content: flex-start;
+    font-family: "Lexend Deca";
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    box-shadow: 0 0 3px #fff;
+    border-radius: 25px;
+    color: #fff;
+    transition: all ease 0.2s;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        display: flex;
+        height: auto;
+        color: #fff;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .col {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.8rem 2rem;
+    }
+
+    .sedans {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 5px 5px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-top: -7rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    button {
+        padding: 0.7rem 0.8rem;
+        width: 35%;
+        justify-content: flex-start;
+    }
+
+    .details {
+    width: 85%;
+    font-size: 15px;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: "Lexend Deca";
+    margin-bottom: 4rem;
+}
+}
