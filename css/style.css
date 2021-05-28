@@ -16,31 +16,35 @@ body {
 object {
     padding: 0;
     margin: 0;
+    height: auto;
 }
 
 h2 {
     font-family: "Big Shoulders Display";
     font-weight: 700;
-    margin-top: -2rem;
+    margin-top: -30%;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    font-size: 3rem;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    padding: 0 2rem;
 }
 
 .col {
-    width: 23%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1.8rem 2rem;
+    justify-content: space-between;
+    padding: 3rem;
 }
 
 .details {
-    width: 85%;
-    font-size: 11px;
+    width: 75%;
+    font-size: 15px;
     line-height: 1.5;
     color: hsla(0, 0%, 100%, 0.75);
     font-weight: 400;
@@ -49,11 +53,11 @@ h2 {
 }
 
 button {
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: #fff;
     border: none;
-    padding: 0.6rem 0.8rem;
-    width: 70%;
+    padding: 0.9rem 0.8rem;
+    width: 60%;
     border-radius: 25px;
     justify-content: flex-start;
     font-family: "Lexend Deca";
@@ -95,6 +99,33 @@ button:hover {
     transition: all ease 0.2s;
 }
 
+@media only screen and (max-width: 1024px) {
+    h2 {
+        margin-top: -10%;
+    }
+
+    .col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    button {
+        padding: 0.9rem 0.8rem;
+        font-size: .8rem;
+        width: 80%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     body {
         display: flex;
@@ -112,7 +143,7 @@ button:hover {
         width: 85%;
         display: flex;
         flex-direction: column;
-        padding: 1.8rem 2rem;
+        padding: 3rem;
     }
 
     .sedans {
@@ -125,24 +156,25 @@ button:hover {
 
     h2 {
         font-size: 2.5rem;
-        margin-top: -7rem;
+        margin-top: -40%;
         margin-bottom: 1rem;
         text-transform: uppercase;
     }
 
     button {
-        padding: 0.7rem 0.8rem;
-        width: 35%;
+        padding: 0.9rem 0.8rem;
+        width: 45%;
         justify-content: flex-start;
     }
 
     .details {
-    width: 85%;
-    font-size: 15px;
-    line-height: 1.5;
-    color: hsla(0, 0%, 100%, 0.75);
-    font-weight: 400;
-    font-family: "Lexend Deca";
-    margin-bottom: 4rem;
+        width: 85%;
+        font-size: 15px;
+        line-height: 1.5;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-weight: 400;
+        font-family: "Lexend Deca";
+        margin-bottom: 4rem;
+    }
 }
-}
+
